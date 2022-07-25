@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-		<link
-			rel="shortcut icon"
-			href="img/calculator-favicon.svg"
-			type="image/x-icon"
-		/>
-		<title>Culculator</title>
-	</head>
-	<body>
-		<div class="container">
-			<div class="calculator-block">
-				<div class="item-input input">0</div>
-				<div class="math-operations">
-					<div class="item">sin</div>
-					<div class="item">cos</div>
-					<div class="item">tan</div>
-					<div class="item">ctg</div>
-					<div class="item">lg</div>
-					<div class="item">ln</div>
-					<div class="item">
-						<p>x<sup>y</sup></p>
-					</div>
-					<div class="item">
-						<p>x<sup>2</sup></p>
-					</div>
-					<div class="item">
-						<p>x<sup>-1</sup></p>
-					</div>
-					<div class="item">&radic;x</div>
-					<div class="item">x!</div>
-					<div class="item">&divide;</div>
-					<div class="item">&times;</div>
-					<div class="item">-</div>
-					<div class="item">+</div>
-				</div>
-				<hr class="hr-line" />
-				<div class="input-data">
-					<div class="item">9</div>
-					<div class="item">8</div>
-					<div class="item">7</div>
-					<div class="item">6</div>
-					<div class="item">5</div>
-					<div class="item">4</div>
-					<div class="item">3</div>
-					<div class="item">2</div>
-					<div class="item">1</div>
-					<div class="item">0</div>
-					<div class="item">(</div>
-					<div class="item">)</div>
-					<div class="item">.</div>
-					<div class="item">C</div>
-					<div class="item">&#8592;</div>
-				</div>
-				<div class="item-output output">=</div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/calculator-favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Culculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator-block">
+        <div class="item-input input">0</div>
+        <div class="math-operations">
+          <div class="item" onclick="fn('sin')">sin</div>
+          <div class="item" onclick="fn('cos')">cos</div>
+          <div class="item" onclick="fn('tan')">tan</div>
+          <div class="item" onclick="fn('ctg')">ctg</div>
+          <div class="item" onclick="log('lg')">lg</div>
+          <div class="item" onclick="log('ln')">ln</div>
+          <div class="item" onclick="sup('^')">
+            <p>x<sup>y</sup></p>
+          </div>
+          <div class="item" onclick="sup('sqr')">
+            <p>x<sup>2</sup></p>
+          </div>
+          <div class="item" onclick="sup('^-1')">
+            <p>x<sup>-1</sup></p>
+          </div>
+          <div class="item" onclick="sup('sqrt')">&radic;x</div>
+          <div class="item" onclick="factorial()">x!</div>
+          <div class="item" onclick="enter('/')">&divide;</div>
+          <div class="item" onclick="enter('*')">&times;</div>
+          <div class="item" onclick="enter('-')">-</div>
+          <div class="item" onclick="enter('+')">+</div>
+        </div>
+        <hr class="hr-line" />
+        <div class="input-data">
+          <div class="item" onclick="enter('9')">9</div>
+          <div class="item" onclick="enter('8')">8</div>
+          <div class="item" onclick="enter('7')">7</div>
+          <div class="item" onclick="enter('6')">6</div>
+          <div class="item" onclick="enter('5')">5</div>
+          <div class="item" onclick="enter('4')">4</div>
+          <div class="item" onclick="enter('3')">3</div>
+          <div class="item" onclick="enter('2')">2</div>
+          <div class="item" onclick="enter('1')">1</div>
+          <div class="item" onclick="enter('0')">0</div>
+          <div class="item" onclick="enter('(')">(</div>
+          <div class="item" onclick="enter(')')">)</div>
+          <div class="item" onclick="enter('.')">.</div>
+          <div class="item" onclick="del()">C</div>
+          <div class="item" onclick="remove()">&#8592;</div>
+        </div>
+        <div class="item-output output" onclick="output()">=</div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
 </html>
