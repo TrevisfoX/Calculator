@@ -20,50 +20,53 @@
   </head>
   <body>
     <div class="container">
-      <div class="calculator-block">
-        <div class="item-input input">0</div>
-        <div class="math-operations">
-          <div class="item" onclick="fn('sin')">sin</div>
-          <div class="item" onclick="fn('cos')">cos</div>
-          <div class="item" onclick="fn('tan')">tan</div>
-          <div class="item" onclick="fn('ctg')">ctg</div>
-          <div class="item" onclick="log('lg')">lg</div>
-          <div class="item" onclick="log('ln')">ln</div>
-          <div class="item" onclick="sup('^')">
+      <div class="calculator">
+        <output class="calculator-output"></output>
+        <div class="calculator-block">
+          <button type="button" class="item">&#960;</button>
+          <button type="button" class="item">sin</button>
+          <button type="button" class="item">x!</button>
+          <button type="button" class="item item-beige">(</button>
+          <button type="button" class="item item-beige">)</button>
+          <button type="button" class="item item-beige">&#37;</button>
+          <button type="button" class="item item-del">AC</button>
+          <button type="button" class="item">&#8519;</button>
+          <button type="button" class="item">cos</button>
+          <button type="button" class="item">ln</button>
+          <button type="button" class="item">7</button>
+          <button type="button" class="item">8</button>
+          <button type="button" class="item">9</button>
+          <button type="button" class="item" item-beige>&divide;</button>
+          <button type="button" class="item item-change-mark">&#177;</button>
+          <button type="button" class="item">tan</button>
+          <button type="button" class="item">&radic;x</button>
+          <button type="button" class="item">4</button>
+          <button type="button" class="item">5</button>
+          <button type="button" class="item">6</button>
+          <button type="button" class="item item-beige">&times;</button>
+          <button type="button" class="item">log</button>
+          <button type="button" class="item">ctg</button>
+          <button type="button" class="item">
             <p>x<sup>y</sup></p>
-          </div>
-          <div class="item" onclick="sup('sqr')">
+          </button>
+          <button type="button" class="item">1</button>
+          <button type="button" class="item">2</button>
+          <button type="button" class="item">3</button>
+          <button type="button" class="item">-</button>
+          <button type="button" class="item">
             <p>x<sup>2</sup></p>
-          </div>
-          <div class="item" onclick="sup('^-1')">
+          </button>
+          <button type="button" class="item">
+            <p>x<sup>3</sup></p>
+          </button>
+          <button type="button" class="item">
             <p>x<sup>-1</sup></p>
-          </div>
-          <div class="item" onclick="sup('sqrt')">&radic;x</div>
-          <div class="item" onclick="factorial()">x!</div>
-          <div class="item" onclick="enter('/')">&divide;</div>
-          <div class="item" onclick="enter('*')">&times;</div>
-          <div class="item" onclick="enter('-')">-</div>
-          <div class="item" onclick="enter('+')">+</div>
+          </button>
+          <button type="button" class="item">0</button>
+          <button type="button" class="item">.</button>
+          <button type="button" class="item item-result">=</button>
+          <button type="button" class="item item-beige">+</button>
         </div>
-        <hr class="hr-line" />
-        <div class="input-data">
-          <div class="item" onclick="enter('9')">9</div>
-          <div class="item" onclick="enter('8')">8</div>
-          <div class="item" onclick="enter('7')">7</div>
-          <div class="item" onclick="enter('6')">6</div>
-          <div class="item" onclick="enter('5')">5</div>
-          <div class="item" onclick="enter('4')">4</div>
-          <div class="item" onclick="enter('3')">3</div>
-          <div class="item" onclick="enter('2')">2</div>
-          <div class="item" onclick="enter('1')">1</div>
-          <div class="item" onclick="enter('0')">0</div>
-          <div class="item" onclick="enter('(')">(</div>
-          <div class="item" onclick="enter(')')">)</div>
-          <div class="item" onclick="enter('.')">.</div>
-          <div class="item" onclick="del()">C</div>
-          <div class="item" onclick="remove()">&#8592;</div>
-        </div>
-        <div class="item-output output" onclick="output()">=</div>
       </div>
     </div>
     <script src="js/main.js"></script>
