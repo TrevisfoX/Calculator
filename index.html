@@ -13,100 +13,56 @@
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="shortcut icon"
-      href="img/calculator-favicon.svg"
+      href="img/calculator-favicon.png"
       type="image/x-icon"
     />
-    <title>Culculator</title>
+    <title>Scientific Culculator</title>
   </head>
   <body>
     <div class="container">
-      <article class="calculator">
-        <output class="calculator-output" id="output"></output>
+      <h2 class="title">Scientific Calculator</h2>
+      <div class="calculator">
+        <output id="output" class="calculator-output">0</output>
         <div class="calculator-block">
-          <button type="button" class="calculator-button item-const">
-            &#960;
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            sin
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            x!
-          </button>
-          <button type="button" class="calculator-button item-operation">
-            (
-          </button>
-          <button type="button" class="calculator-button item-operation">
-            )
-          </button>
-          <button type="button" class="calculator-button item-operation">
-            &#37;
-          </button>
-          <button type="button" class="calculator-button item-del">AC</button>
-          <button type="button" class="calculator-button item-const">
-            &#8519;
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            cos
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            ln
-          </button>
-          <button type="button" class="calculator-button">7</button>
-          <button type="button" class="calculator-button">8</button>
-          <button type="button" class="calculator-button">9</button>
-          <button type="button" class="calculator-button item-operation">
-            /
-          </button>
-          <button
-            type="button"
-            class="calculator-button item-eng-operation item-change-mark"
-          >
-            &#177;
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            tan
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            log
-          </button>
-          <button type="button" class="calculator-button">4</button>
-          <button type="button" class="calculator-button">5</button>
-          <button type="button" class="calculator-button">6</button>
-          <button type="button" class="calculator-button item-operation">
-            *
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            &radic;x
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            ctg
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            <p>x<sup>y</sup></p>
-          </button>
-          <button type="button" class="calculator-button">1</button>
-          <button type="button" class="calculator-button">2</button>
-          <button type="button" class="calculator-button">3</button>
-          <button type="button" class="calculator-button item-operation">
-            -
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            <p>x<sup>2</sup></p>
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            <p>x<sup>3</sup></p>
-          </button>
-          <button type="button" class="calculator-button item-eng-operation">
-            <p>x<sup>-1</sup></p>
-          </button>
-          <button type="button" class="calculator-button">0</button>
-          <button type="button" class="calculator-button">.</button>
-          <button type="button" class="calculator-button">=</button>
-          <button type="button" class="calculator-button item-operation">
-            x
-          </button>
+          <div class="btns-block btns-block-scientific">
+            <button type="button" class="calc-btn">π</button>
+            <button type="button" class="calc-btn">e</button>
+            <button type="button" class="calc-btn">sin</button>
+            <button type="button" class="calc-btn">cos</button>
+            <button type="button" class="calc-btn">tan</button>
+            <button type="button" class="calc-btn">ctg</button>
+            <button type="button" class="calc-btn">%</button>
+            <button type="button" class="calc-btn">±</button>
+            <button type="button" class="calc-btn">log</button>
+            <button type="button" class="calc-btn">x!</button>
+            <button type="button" class="calc-btn">√</button>
+            <button type="button" class="calc-btn">x²</button>
+          </div>
+          <div class="btns-block btns-block-base">
+            <button type="button" class="calc-btn">(</button>
+            <button type="button" class="calc-btn">)</button>
+            <button type="button" class="calc-btn">+</button>
+            <button type="button" class="calc-btn">-</button>
+            <button type="button" class="calc-btn">/</button>
+            <button type="button" class="calc-btn">*</button>
+            <button type="button" class="calc-btn">9</button>
+            <button type="button" class="calc-btn">8</button>
+            <button type="button" class="calc-btn">7</button>
+            <button type="button" class="calc-btn">6</button>
+            <button type="button" class="calc-btn">5</button>
+            <button type="button" class="calc-btn">4</button>
+            <button type="button" class="calc-btn">3</button>
+            <button type="button" class="calc-btn">2</button>
+            <button type="button" class="calc-btn">1</button>
+            <button type="button" class="calc-btn">0</button>
+            <button type="button" class="calc-btn">00</button>
+            <button type="button" class="calc-btn">.</button>
+            <button type="button" class="calc-btn">C</button>
+            <button type="button" class="calc-btn">AC</button>
+            <button type="button" class="calc-btn calc-btn-equal">=</button>
+          </div>
         </div>
-      </article>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </body>
